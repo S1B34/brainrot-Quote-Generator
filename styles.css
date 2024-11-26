@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* GIF Styling */
+  .gif-container {
+    margin-bottom: 20px;
+  }
+  
+  .gif-container img {
+    width: 140px;
+    height: 140px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  /* Quote Box */
+  .quote-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .quote-box p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #author {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+  }
+  
+  /* Buttons */
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  button {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    flex: 1;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #dd2476, #ff512f);
+    transform: translateY(-2px);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
